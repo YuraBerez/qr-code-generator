@@ -47,7 +47,7 @@ namespace qr_code_generator
             // saving image
             using (var imageStream = new SKFileWStream(outputPath))
             {
-                qrCodeBitmap.Encode(imageStream, SKEncodedImageFormat.Png, 1500);
+                qrCodeBitmap.Encode(imageStream, SKEncodedImageFormat.Png, 100);
             }
 
             // Dispose of the QR code Bitmap
